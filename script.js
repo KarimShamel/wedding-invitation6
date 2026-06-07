@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // --- 3. Countdown Timer ---
     // Set your engagement date here
-    const engagementDate = new Date('December 31, 2026 18:00:00').getTime();
+    const engagementDate = new Date('June 26, 2026 7:00:00').getTime();
 
     const updateCountdown = () => {
         const now = new Date().getTime();
