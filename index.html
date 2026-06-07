@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omar & Nour | Engagement Celebration</title>
+    <meta name="description" content="The engagement celebration of Omar & Nour at Villa 23, Yasmine Compound.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="preloader">
+        <div class="loader-content">
+            <h1 class="elegant-logo">O & N</h1>
+            <p>Beginning our forever...</p>
+        </div>
+    </div>
+
+    <div class="music-player">
+        <button id="music-btn" aria-label="Play Music">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18V5l12-2v13"></path><circle cx="6" cy="18" r="3"></circle><circle cx="18" cy="16" r="3"></circle></svg>
+        </button>
+        <audio id="bg-music" loop>
+            <source src="assets/music/romantic.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <div id="particles"></div>
+
+    <section id="hero">
+        <div class="hero-background"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content reveal">
+            <div class="ring-icon">💍</div>
+            <h1 class="title">Omar & Nour</h1>
+            <p class="subtitle">Together is a beautiful place to be.</p>
+            <button class="cta-btn" onclick="document.getElementById('details').scrollIntoView({behavior: 'smooth'})">View Invitation</button>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse"></div>
+        </div>
+    </section>
+
+    <section id="story" class="section-padding light-bg">
+        <div class="container reveal">
+            <h2 class="section-title">Our Story</h2>
+            <div class="story-content glass-card">
+                <div class="story-image-placeholder">Omar & Nour Photo Placeholder</div>
+                <div class="story-text">
+                    <p>Every love story is beautiful, but ours is our favorite. From the moment we met, we knew this was the beginning of something extraordinary. (Edit this text with your personal love story...)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="oath" class="section-padding dark-bg">
+        <div class="container reveal">
+            <h2 class="section-title golden-text">Our Forever Oath</h2>
+            <div class="oath-container">
+                <p class="oath-text reveal-stagger">
+                    <span>"Today, surrounded by those we love, we promise to choose each other every day.</span>
+                    <span>Through every sunrise and every season, we vow to walk side by side,</span>
+                    <span>to support one another's dreams, to find joy in the smallest moments,</span>
+                    <span>and to build a lifetime of beautiful memories together.</span>
+                    <span>Wherever life leads us, our hearts will always find their way home to each other.</span>
+                    <span>This is our promise, our journey, and our forever."</span>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="details" class="section-padding light-bg">
+        <div class="container">
+            <h2 class="section-title">Event Details</h2>
+            <div class="details-grid">
+                <div class="detail-card glass-card reveal">
+                    <h3>Engagement Celebration</h3>
+                    <p><strong>Date:</strong> [User to Edit Date]</p>
+                    <p><strong>Time:</strong> [User to Edit Time]</p>
+                </div>
+                <div class="detail-card glass-card reveal" style="transition-delay: 0.2s;">
+                    <h3>The Venue</h3>
+                    <p>Villa 23, Yasmine Compound</p>
+                    <p><em>Outdoor Garden</em></p>
+                </div>
+                <div class="detail-card glass-card reveal" style="transition-delay: 0.4s;">
+                    <h3>Dress Code</h3>
+                    <p>Elegant Beige & White</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="countdown-section" class="section-padding dark-bg parallax">
+        <div class="container reveal">
+            <h2 class="section-title">The Countdown Begins</h2>
+            <div class="countdown" id="countdown">
+                <div class="time-box glass-card"><span id="days">00</span><p>Days</p></div>
+                <div class="time-box glass-card"><span id="hours">00</span><p>Hours</p></div>
+                <div class="time-box glass-card"><span id="minutes">00</span><p>Minutes</p></div>
+                <div class="time-box glass-card"><span id="seconds">00</span><p>Seconds</p></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="venue-gallery" class="section-padding light-bg">
+        <div class="container reveal">
+            <h2 class="section-title">Our Venue</h2>
+            <div class="masonry-gallery">
+                <div class="gallery-item glass-card">Villa Photo 1</div>
+                <div class="gallery-item glass-card">Villa Photo 2</div>
+                <div class="gallery-item glass-card">Villa Photo 3</div>
+                <div class="gallery-item glass-card">Villa Photo 4</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="map" class="section-padding light-bg">
+        <div class="container reveal">
+            <h2 class="section-title">Find Us</h2>
+            <div class="map-card glass-card">
+                <p class="venue-address">Villa 23, Yasmine Compound</p>
+                <div class="map-placeholder">Google Maps Iframe Placeholder</div>
+                <a href="#" class="cta-btn map-btn" target="_blank">Open in Google Maps</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="guestbook" class="section-padding dark-bg">
+        <div class="container reveal">
+            <h2 class="section-title golden-text">Guestbook</h2>
+            <div class="guestbook-container glass-card">
+                <form id="message-form">
+                    <input type="text" id="guest-name" placeholder="Your Name" required>
+                    <textarea id="guest-message" placeholder="Leave a wish for the couple..." rows="4" required></textarea>
+                    <button type="submit" class="cta-btn">Sign Guestbook</button>
+                </form>
+                <div id="messages-display"></div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content reveal">
+            <h2 class="elegant-logo">Omar & Nour</h2>
+            <p>The beginning of our forever.</p>
+            <div class="hearts">🤍 ✨ 🤍</div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
